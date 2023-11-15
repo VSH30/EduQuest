@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  main {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  main h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  main form div {
+    margin-bottom: 1rem;
+  }
+  
+  main label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  main input[type="text"],
+  main input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  
+  main button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  main button:hover {
+    background-color: #286090;
+  }
+  

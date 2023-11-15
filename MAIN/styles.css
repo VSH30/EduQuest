@@ -1,0 +1,304 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.question-details, .answer-details {
+  font-style: italic;
+  color: #666;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.date {
+  font-weight: normal;
+}
+
+.question, .answer, .new-answer {
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.new-answer form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+textarea, input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 0.5rem 1rem;
+}
+
+.search-bar input {
+  width: 200px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.user-tab {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.user-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-tab:hover .user-options {
+  display: block;
+}
+
+.user-options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-options li {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-options li:last-child {
+  border-bottom: none;
+}
+
+.user-options a {
+  text-decoration: none;
+  color: #333;
+}
+
+.back-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.back-button:hover {
+  background-color: #444;
+}
+
+.user-tab {
+  color: black;
+}
+
+/* questions list */
+.questions-list {
+  margin-top: 1rem;
+}
+
+.questions-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.questions-list li {
+  margin-bottom: 1rem;
+}
+
+.questions-list a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+/* answers */
+.answers {
+  margin-top: 1rem;
+}
+
+.answers .answer {
+  margin-bottom: 1rem;
+}
+
+.answers .like-button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.answers .like-button:hover {
+  background-color: #286090;
+}
+
+.answers .likes {
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.answers .like-count {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+
+/* add question form */
+.add-question {
+  margin-top: 1rem;
+}
+
+.add-question form div {
+  margin-bottom: 1rem;
+}
+
+.add-question label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.add-question textarea, .add-question input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.add-question button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.add-question button:hover {
+  background-color: #286090;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  margin: 0;
+  color: black;
+}
+
+/* Centered Search Bar */
+.search-bar-centered {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-centered input[type="text"],
+.search-bar-centered button {
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+.search-bar-centered button {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.search-bar-centered button:hover {
+  background-color: #286090;
+}
