@@ -13,6 +13,7 @@ CREATE TABLE Users (
 );
 INSERT INTO Users(username,user_type,dept,name,email,pass) VALUES('vsh','student','bca','Vishal Hanchnoli','vsh@gmail.com','vsh123');
 INSERT INTO Users(username,user_type,dept,name,email,pass) VALUES('rp','student','bca','Rohit Prajapati','rp@gmail.com','rp123');
+INSERT INTO Users(username,user_type,dept,name,email,pass) VALUES('vsh07','admin','bca','VSH','VSH@gmail.com','vsh07');
 CREATE TABLE Question (
   question_id INT AUTO_INCREMENT PRIMARY KEY,
   qid VARCHAR(50) UNIQUE NOT NULL,
