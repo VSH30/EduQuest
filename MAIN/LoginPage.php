@@ -81,7 +81,7 @@
                               if($pass[2]=='student')
                                 header('LOCATION:ques.php');
                               else if($pass[2]== 'admin')
-                                header('LOCATION:adminpage.php');
+                                header('LOCATION:admin_ques.php');
                             }else{
                               echo "INVALID USER TYPE!!!";
                             }
