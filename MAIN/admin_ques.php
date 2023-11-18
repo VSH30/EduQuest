@@ -81,7 +81,12 @@
       <form method=POST action=#>
       <ul>
         <?php
-          $squery = $main->query("SELECT Q.question_id,Q.title,Q.qid,Q.imgfile, U.username, Q.datetime, COUNT(V.user_id) AS view_count FROM Question Q LEFT JOIN Views V ON Q.qid = V.qid LEFT JOIN Users U ON Q.user_id = U.user_id GROUP BY Q.question_id, Q.qid, Q.user_id, Q.title, Q.imgfile, Q.datetime, U.username, U.user_type, U.dept, U.name, U.email ORDER BY Q.question_id ASC;");
+          $squery = $main->query("SELECT Q.question_id,Q.title,Q.qid,Q.imgfile, U.username, Q.datetime, COUNT(V.user_id) AS view_count 
+                                  FROM Question Q 
+                                  LEFT JOIN Views V ON Q.qid = V.qid 
+                                  LEFT JOIN Users U ON Q.user_id = U.user_id 
+                                  GROUP BY Q.question_id, Q.qid, Q.user_id, Q.title, Q.imgfile, Q.datetime, U.username, U.user_type, U.dept, U.name, U.email 
+                                  ORDER BY Q.question_id ASC;");
           //$squery = $main->query("SELECT * FROM Question, Users WHERE Question.user_id = Users.user_id");
           $cnt = 0;
           if(isset($_POST['search'])){
