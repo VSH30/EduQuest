@@ -66,7 +66,12 @@
       <ul>
         <form method="POST" action="#">
         <?php
-          $squery = $main->query("SELECT A.aid, A.imgfile, A.datetime AS answer_datetime, COUNT(L.user_id) AS like_count, Q.question_id, Q.title, Q.qid FROM Answer A LEFT JOIN Likes L ON A.answer_id = L.answer_id LEFT JOIN Question Q ON A.question_id = Q.question_id WHERE A.user_id = $uid GROUP BY A.aid, A.imgfile, A.datetime, Q.question_id, Q.title, Q.qid ORDER BY like_count DESC;");
+          $squery = $main->query("SELECT A.aid, A.imgfile, A.datetime AS answer_datetime, COUNT(L.user_id) AS like_count, Q.question_id, Q.title, Q.qid 
+                                  FROM Answer A LEFT JOIN Likes L ON A.answer_id = L.answer_id 
+                                  LEFT JOIN Question Q ON A.question_id = Q.question_id 
+                                  WHERE A.user_id = $uid 
+                                  GROUP BY A.aid, A.imgfile, A.datetime, Q.question_id, Q.title, Q.qid 
+                                  ORDER BY like_count DESC;");
           //$squery = $main->query("SELECT * FROM Question, Users WHERE Question.user_id = Users.user_id");
           $cnt = 0;
           while($arr = mysqli_fetch_assoc($squery)){
